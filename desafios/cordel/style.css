@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2? family = Playfair + Display & display = swap');
+
+:root {
+  --fonte1: Georgia, 'Times New Roman', Times, serif;
+  --fonte2:'David Libre', serif;
+  --fonte3:'Playfair Display', serif;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+html, body{
+  min-height: 100vh;
+  background-color:azure;
+  font-family:var(--fonte1);
+}
+
+header{
+  background-color:black;
+  text-align: center;
+}
+
+header h1{
+  padding-top:50px;
+  font-variant: small-caps;
+  font-family:var(--fonte2);
+  font-size:5vw;
+  color:rgb(255, 255, 255);
+}
+
+header p{
+  padding-bottom:60px;
+  font-family:var(--fonte3);
+  font-size:1.5em;
+  color: rgba(255, 255, 255, 0.603);
+}
+
+header a, footer a{
+  font-family:var(--fonte1);
+  color:rgba(255, 255, 255, 0.842);
+  text-decoration:none;
+  font-weight:bolder;
+}
+
+header a:hover, footer a:hover{
+  text-decoration:underline;
+}
+
+section{
+  padding-top:5vh;
+  padding-bottom:5vh;
+  line-height:2em;
+  padding-left: 30px;
+}
+
+.blue{
+  background-color:azure;
+  font-family:var(--fonte2);
+  font-size:3vh;
+}
+
+.pop{
+  background-color:azure;
+  font-family:var(--fonte2);
+  font-size: 3vh;
+  color: azure;
+}
+
+section.pop{
+  background-image: url(imagens/background001.jpg);
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pop p{
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.027);
+  text-shadow: 1px 1px 0px black;
+}
+.rock{
+  background-color:azure;
+  font-family:var(--fonte2);
+  font-size: 3vh;
+  color: azure;
+  box-shadow:inset 7px 7px 14px solid black;
+
+}
+
+section.rock{
+  background-image: url(imagens/background002.jpg);
+  background-position: right right;
+  background-size: cover;
+  background-attachment: fixed;  
+  box-shadow:inset 7px 7px 14px solid black;
+}
+
+.rock p{
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.300);
+}
+
+footer{
+  padding:15px;
+  text-align:center;
+  background-color: #8B8EC4 ;
+  color:azure;
+  font-family:var(--fonte1);
+  font-size: 1vw;
+}
